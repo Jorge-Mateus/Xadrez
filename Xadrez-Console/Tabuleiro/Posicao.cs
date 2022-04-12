@@ -1,5 +1,5 @@
 ﻿
-namespace Xadrez_Console.Tabuleiro
+namespace Xadrez_Console.tabuleiro
 {
     class Posicao
     {
