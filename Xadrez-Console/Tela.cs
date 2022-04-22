@@ -1,5 +1,6 @@
 ﻿using System;
 using Xadrez_Console.tabuleiro;
+using Xadrez_Console.xadrez;
 
 namespace Xadrez_Console
 {
@@ -29,6 +30,15 @@ namespace Xadrez_Console
 
         }
 
+        public static PosicaoXadrez lerPosicaoXadrez()
+        {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(coluna, linha);
+        }
+
+
         public static void imprimirPeca(Peca peca)
         {
             if(peca.Cor == Cor.Branca )
@@ -43,5 +53,6 @@ namespace Xadrez_Console
                 Console.ForegroundColor = aux;
             }
         }
+
     }
 }
