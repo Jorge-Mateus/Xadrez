@@ -15,5 +15,10 @@
             this.QteMovimento = 0;
         }
 
+        public void incrimentarQteMovimento()
+        {
+            QteMovimento++;
+        } 
+
     }
 }
