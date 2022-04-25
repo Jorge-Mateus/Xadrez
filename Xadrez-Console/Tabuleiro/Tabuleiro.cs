@@ -36,6 +36,8 @@ namespace Xadrez_Console.tabuleiro
             return peca(pos) != null;
         }
 
+
+
         public void colocarPeca(Peca p, Posicao pos)
         {
             if ( existePeca(pos) )
@@ -66,6 +68,7 @@ namespace Xadrez_Console.tabuleiro
             }
                 return true;
         }
+
         public void validarPosicao(Posicao pos)
         {
             if ( !posicaoValida(pos) )
